@@ -8,6 +8,10 @@ body {
   background-color: rgba(0, 0, 0, 0.03);
 }
 
+*{
+  margin: 0;
+}
+
 .link{
   text-decoration: none;
 }
@@ -16,6 +20,7 @@ body {
   --green:#2ABA75;
   --black:rgba(0, 0, 0, 0.734);
   --gray:rgba(0, 0, 0, 0.421);
+  --border-gray:rgba(0, 0, 0, 0.141);
 }
 
 .link{
@@ -23,6 +28,10 @@ body {
   list-style: none;
   -webkit-tap-highlight-color: transparent;
   color: var(--black);
+  
 
+}
 
+*{
+  animation-delay: 10ms;
 }

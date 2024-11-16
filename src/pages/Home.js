@@ -7,18 +7,24 @@ export default function Home(){
           <p className="banner">Welcome to <span>Client</span> view</p>
 
           <div className="wrapper">
+            <Link className="link" to={'/pipeline'}>
             <div className="home-card">
                 <img src="/images/pipeline.jpg"/>
                 <h2>Pipeline</h2>
                 <p>View Opportunity, lead, proposal, won and in idea stage</p>
                 <span>VIEW PIPELINE</span>
             </div>
+            </Link>
+            <Link className="link" to={'/contracting'}>
+           
             <div className="home-card">
             <img src="/images/contracting.jpg"/>
                 <h2>Contracting</h2>
                 <p>For all your contracting needs, see all your contracts and request reviews</p>
                 <span>VIEW CONTRACTING</span>
             </div>
+            </Link>
+          
             <div className="home-card">
             <img src="/images/invoicing.jpg"/>
                 <h2>Invoicing</h2>
