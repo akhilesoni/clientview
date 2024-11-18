@@ -53,3 +53,7 @@
     font-size: 13px;
     font-weight: bold;
 }
+
+.home-card:hover{
+    box-shadow: 2px 2px 10px var(--border-gray);
+}

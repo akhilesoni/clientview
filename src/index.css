@@ -17,10 +17,12 @@ body {
 }
 
 :root{
-  --green:#2ABA75;
+  --green:#11872d;
   --black:rgba(0, 0, 0, 0.734);
   --gray:rgba(0, 0, 0, 0.421);
   --border-gray:rgba(0, 0, 0, 0.141);
+  --bg-gray:rgba(0, 0, 0, 0.03);
+  --d-green:#0a521b;
 }
 
 .link{

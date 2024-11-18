@@ -3,30 +3,7 @@
 }
 
 .pipeline .banner-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-}
-
-.pipeline .banner{
-    margin: 0;
-    display: flex;
-    width: 800px;
-    justify-content: space-between;
-    align-items:first baseline;
-    padding: 30px 25px;
-}
-
-.pipeline .banner h2{
-    margin: 0 0 20px 0;
-    font-weight: 500;
-    font-size: 30px;
-}
-.pipeline .banner p{
-    font-size: 13px;
-    font-weight: 500;
+    background-position: top;
 }
 
 .stage-toggle{

@@ -1,0 +1,94 @@
+
+
+.contracting .banner-wrapper{
+    background-position: center;
+}
+
+.contracting-main{
+    display: flex;
+
+}
+
+.contracting-main .menu{
+    padding: 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items:last baseline;
+    width: 20%;
+}
+
+.contracting-main .menu .item{
+    font-size: 13.5px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.contracting-main .menu .item:hover{
+    color: var(--d-green);
+}
+
+
+.contracting-main .item i{
+    margin-right: 10px;
+}
+
+.contracting-main .cards{
+    width: 80%;
+    
+}
+
+.contracting-main .cards h2{
+    text-align: center;
+    margin: 20px;
+    font-weight: 400;
+    
+}
+
+.contracting-main .cards h2 span{
+    color: var(--green);
+    font-weight: 500;
+}
+
+
+.contracting-main .card{
+    background-color: var(--bg-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    justify-content:center;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid var(--border-gray);
+    cursor: pointer;
+}
+
+
+.contracting-main .card h1{
+    font-weight: 500;
+    font-size: 19px;
+    color: var(--green);
+}
+
+.contracting-main .card p{
+ color: var(--gray);
+ font-size: 13px;
+ font-weight: 600;
+ margin-bottom: 5px;
+}
+
+.contracting-main .card i{
+    color: var(--green);
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+
+.contracting-main .card:hover{
+    border: 1px solid var(--green);
+}

@@ -27,7 +27,7 @@
 
 
 
-.menu{
+.navbar .menu{
     display: flex;
     text-decoration: none;
     list-style: none;
@@ -41,7 +41,7 @@
     justify-content: space-between;
 }
 
-.menu li{
+.navbar .menu li{
     padding: 10px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
@@ -65,10 +65,11 @@
     margin: 0 10px 0 0;
 }
 
-li:hover{
+.navbar .menu li:hover{
     border-bottom: 3px solid var(--green);
+    animation-delay: 100ms;
 }
 
-li:active{
+.navbar .menu li:active{
     background-color: rgba(0, 0, 0, 0.064);
 }
