@@ -15,6 +15,7 @@
     flex-direction: column;
     align-items:last baseline;
     width: 20%;
+    user-select: none;
 }
 
 .contracting-main .menu .item{
@@ -60,12 +61,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 250px;
+    width: 230px;
     justify-content:center;
     height: 200px;
     margin: 10px;
+    padding: 0 10px;
     border: 1px solid var(--border-gray);
     cursor: pointer;
+    text-align: center;
 }
 
 
@@ -91,4 +94,65 @@
 
 .contracting-main .card:hover{
     border: 1px solid var(--green);
+}
+
+
+.standard-template .card{
+    font-size: 14px;
+}
+
+.standard-template p{
+    text-align: center;
+    color: var(--gray);
+}
+
+.standard-template .wrapper{
+    margin-top: 20px;
+}
+
+.lawyer-support .card{
+    font-size: 14px;
+}
+
+.lawyer-support p{
+    text-align: center;
+    color: var(--gray);
+}
+
+.lawyer-support .wrapper{
+    margin-top: 20px;
+}
+
+.space{
+    height: 30px;
+}
+
+
+.standard-template .wrapper .card h1{
+    font-size: 14px;
+}
+.standard-template .wrapper .card p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+
+.upload-contract .wrapper .card h1{
+    font-size: 14px;
+}
+.upload-contract .wrapper .card p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+
+
+.lawyer-support .wrapper .card h1{
+    font-size: 14px;
+}
+
+.lawyer-support .wrapper .card p{
+    margin-top: 10px;
+    font-weight: 500;
 }

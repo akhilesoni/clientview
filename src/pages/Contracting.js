@@ -1,7 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet, Route, Routes, useNavigate } from "react-router-dom";
 import '../styles/contracting.css'
+import ContractingHome from "./ContractingHome";
+import { upload } from "@testing-library/user-event/dist/upload";
+import UploadContract from "./UploadContract";
+import StandardTemplate from "./StandardTemplate";
+import LawyerAssisted from "./LawyerAssisted";
 
 export default function Contracting(){
+    const navigate = useNavigate()
     return (
         <div className="contracting">
             <div className="banner-wrapper" style={{backgroundImage:'url(/images/contracting.jpg)'}}>
@@ -13,31 +19,22 @@ export default function Contracting(){
 
             <div className="contracting-main">
                 <div className="menu">
-                    <p className="item"><i className="fa fa-home"></i> Home</p>
-                    <p className="item"><i className="fa fa-newspaper-o"></i> My Contracts</p>
-                    <p className="item"><i className="fa fa-search"></i> MSA Finder</p>
-                    <p className="item"><i className="	fa fa-vcard-o"></i> Admin Console</p>
+                    <p onClick={()=>navigate('')} className="item"><i className="fa fa-home"></i> Home</p>
+                    <p onClick={()=>navigate('my-contract')} className="item"><i className="fa fa-newspaper-o"></i> My Contracts</p>
+                    <p onClick={()=>navigate('msa-finder')} className="item"><i className="fa fa-search"></i> MSA Finder</p>
+                    <p onClick={()=>navigate('admin-console')} className="item"><i className="fa fa-vcard-o"></i> Admin Console</p>
+                    <div className="space"></div>
+                    <p onClick={()=>navigate('standard-templates')} className="item"><i className="fa fa-file-text-o"></i> Standard Template</p>
+                    <p onClick={()=>navigate('lawyer-assisted')} className="item"><i className="fa fa-legal"></i> Lawyer Support</p>
+                    <p onClick={()=>navigate('upload-contract')} className="item"><i className="fa fa-upload"></i> Upload Contract</p>
                 </div>
                 <div className="cards">
-                    <h2>Welcome to <span>Contracting</span></h2>
-
-                    <div className="wrapper">
-                        <div className="card">
-                            <i className="fa fa-file-text-o"></i>
-                            <p>I want</p>
-                            <h1>BCG Standard Template</h1>
-                        </div>
-                        <div className="card">
-                            <i className="fa fa-legal"></i>
-                            <p>I need</p>
-                            <h1>Lawyer Support</h1>
-                        </div>
-                        <div className="card">
-                            <i className="fa fa-upload"></i>
-                            <p>I need to</p>
-                            <h1>Upload a New Contract</h1>
-                        </div>
-                    </div>
+                    <Routes>
+                        <Route path="" Component={ContractingHome}/>
+                        <Route path="/upload-contract" Component={UploadContract}/>
+                        <Route path="/lawyer-assisted" Component={LawyerAssisted}/>
+                        <Route path="/standard-templates" Component={StandardTemplate}/>
+                    </Routes>
                 </div>
             </div>
 

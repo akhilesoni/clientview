@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Contracting from './pages/Contracting';
 import Pipeline from './pages/Pipeline';
+import ContractingHome from './pages/ContractingHome';
+import UploadContract from './pages/UploadContract';
 
 function App() {
   return (
@@ -12,7 +14,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path='' Component={Home}/>
-          <Route path='/contracting' Component={Contracting}/>
+          <Route path='/contracting/*'  Component={Contracting}/>
           <Route path='/pipeline' Component={Pipeline}/>
         </Routes>
       </Router>
